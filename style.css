@@ -36,25 +36,23 @@ body {
 }
 
 .buttons {
-    display: flex;
-    gap: 20px;  /* Adds space between buttons */
-    justify-content: center;
-    margin-top: 20px; /* Adds space above the buttons */
+    margin-top: 30px;
 }
 
 .btn {
-    background-color: #ff7f50; /* Or choose your desired color */
+    background-color: #ff4d6d; /* Romantic pink */
     color: white;
     border: none;
-    padding: 20px 24px;
-    font-size: 18px;
-    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #ff6347; /* Changes color when hovering */
+    background-color: #c7154c; /* Deeper pink on hover */
 }
 
 
