@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashuria Jonë</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>E Skanove He Cyrkye ❤️</h1>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2 class="names">Damjana & Marjo</h2>
+        <p class="quote">"Kur të shikoj, shoh gjithçka që kam ëndërruar ndonjëherë. Ti je ylli që ndriçon rrugën time dhe lumturia që mbush zemrën time çdo ditë."</p>
+        <div class="buttons">
+            <button class="btn">Me Kliko Për Një Përqafim 🤗</button>
+            <button class="btn">Me Telefono ❤️</button>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <h2 class="section-title">Momentet Tona Të Bukura 🎥</h2>
+        <div class="video-wrapper">
+            <video controls autoplay muted>
+                <source src="marjo.mp4.mp4" type="video/mp4">
+                Shfletuesi juaj nuk mbështet videon.
+            </video>
+            
+            
+            
+            
+            <p class="video-caption">Një kujtim i paharruar i dashurisë sonë.</p>
+        </div>
+    </section>
+<!-- Photo Gallery -->
+    <section class="photo-gallery">
+        <h2 class="section-title">Galeria Jonë e Dashurisë 📸</h2>
+        <div class="gallery-grid">
+            <img src="marjo1.JPG" alt="Moment i Bukur" class="gallery-photo">
+            <img src="marjo 2.JPG" alt="Dashuri në Natyrë" class="gallery-photo">
+            <img src="marjo3.JPG" alt="Kujtim i Paharruar" class="gallery-photo">
+            <img src="marjo 4.JPG" alt="Çift i Lumtur" class="gallery-photo">
+            <img src="marjo 5.jpeg" alt="Moment Special" class="gallery-photo">
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Me Dashuri, për Ty ❤️</p>
+    </footer>
+
+    <!-- Floating Hearts Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const body = document.body;
+
+            function createHeart() {
+                const heart = document.createElement("div");
+                heart.classList.add("heart");
+                heart.style.left = Math.random() * 100 + "vw";
+                heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+                body.appendChild(heart);
+
+                setTimeout(() => heart.remove(), 5000);
+            }
+
+            setInterval(createHeart, 300);
+        });
+    </script>
+</body>
+</html>
