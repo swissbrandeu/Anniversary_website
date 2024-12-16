@@ -37,6 +37,10 @@ body {
 
 .buttons {
     margin-top: 30px;
+    display: flex;
+    flex-direction: column; /* Aligns buttons vertically */
+    align-items: center; /* Center align the buttons */
+    gap: 15px; /* Adds space between the buttons */
 }
 
 .btn {
@@ -44,16 +48,17 @@ body {
     color: white;
     border: none;
     padding: 10px 20px;
-    margin: 10px 0; /* Vertical margin: 10px top and bottom, 0px left and right */
     font-size: 1rem;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: 200px; /* Optional: Set a fixed width for buttons */
 }
 
 .btn:hover {
     background-color: #c7154c; /* Deeper pink on hover */
 }
+
 
 
 /* Video Section */
